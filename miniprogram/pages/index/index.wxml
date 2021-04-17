@@ -1,0 +1,6 @@
+<button type="primary" bindtap="getData">点击获取数据库</button>
+<navigator  id="{{index}}" bindtap="getDetails" url="/pages/details/details" wx:for="{{data}}" style="margin-bottom : 20rpx; font-size : 32px;color : green;">{{item.name}}</navigator>
+<!-- <view id="{{index}}" bindtap="getDetails" url="/pages/details/details" wx:for="{{data}}" style="margin-bottom : 20rpx; font-size : 32px;color : green;">{{item.name}}</view> -->
+<navigator url="/pages/add/add">
+  <button type="primary">点击增加数据</button>
+</navigator>
