@@ -27,6 +27,15 @@ Page({
     })
     .then(res=>{
       console.log(res)
+      wx.hideLoading()
+      
+      console.log(res)
+      
+      wx.navigateBack();
+      wx.showToast({
+        title: '添加成功'
+      })
+      setTimeout(function(){wx.hideToast();},4000)
     })
   },
 

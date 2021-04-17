@@ -8,9 +8,28 @@ Page({
    */
   data: {
     data : [] ,
-    index1 : 0
+    index1 : 0,
+    img1 : "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/add.png",
+    len : 0,
+    head : "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/head.png"
   },
 
+  jump : function(){
+
+    this.setData({
+      img1 : "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/addx.png"
+    })
+    console.log("开始点击")
+  },
+  jumps : function(){
+    this.setData({
+      img1 : "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/add.png"
+    })
+    wx.navigateTo({
+      url :"/pages/add/add"
+    })
+    console.log("点击结束")
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -36,7 +55,7 @@ Page({
         this.setData({
          data : res.data 
         })
-        console.log(res.data[0]._id)
+
       })
   },
 
@@ -51,7 +70,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    db.collection("demo").get().then(res=>
+      {
+        this.setData({
+         data : res.data ,
+         img1 : "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/add.png",
+         len : res.data.length
+        })
+
+      })
+
   },
 
   /**

@@ -1,6 +1,5 @@
 <!--pages/details/details.wxml-->
-<text>pages/details/details.wxml</text>
-<view>姓名   ：{{data[index1].name}} </view>
-<view>地址   ：{{data[index1].addres}} </view>
+<view style="  margin-top: 244rpx ;">姓名   ：{{data[index1].name}} </view>
+<view>地址   {{data[index1].addres}} </view>
 <view>电话号码   ：{{data[index1].tel}} </view>
-<button type="primary" bindtap="new">刷新</button>
+<button type="default" bindtap="del">删除此条数据</button>

@@ -1,8 +1,7 @@
 <!--pages/add/add.wxml-->
-<text>pages/add/add.wxml</text>
 <form bindsubmit="addData">
-<input name = "name" placeholder="在此输入想添加联系人的姓名"></input>
+<input name = "name" placeholder="在此输入想添加联系人的姓名" style="  margin-top: 244rpx ;"></input>
 <input name = "addres" placeholder="在此输入想添加联系人的地址"></input>
 <input name = "tel" placeholder="在此输入想添加联系人的电话号码"></input>
-<button form-type="submit" type="primary" >点击提交</button>
+<button form-type="submit" type="primary" type="default" >点击添加</button>
 </form>

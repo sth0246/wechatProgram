@@ -1,4 +1,9 @@
-/* pages/add/add.wxss */
+
 input{
-  border : 2px solid red;
+  height: 80rpx;
+  margin: auto auto;
+  margin-bottom: 40rpx;
+  width: 80%;
+  border-top : 2px solid #d1d1d1;
+  border-bottom : 2px solid #d1d1d1;
 }

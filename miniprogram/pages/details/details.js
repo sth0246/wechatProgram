@@ -11,12 +11,30 @@ Page({
     index1 : 0,
     obj : {}
   },
-  new : function(){
+  new : function(){//刷新数据
     console.log(this.data)
     console.log(this.data.index1)
     console.log(this.data.obj)
   },
 
+  del : function(){//删除数据
+    wx.showLoading({
+      title: '正在删除',
+      mask : true
+    })
+    var temp = this.data.data[this.data.index1]._id
+    db.collection("demo").doc(temp).remove().then(res =>{
+      wx.hideLoading()
+      
+      console.log(res)
+      
+      wx.navigateBack();
+      wx.showToast({
+        title: '删除成功'
+      })
+      setTimeout(function(){wx.hideToast();},4000)
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -25,7 +43,7 @@ Page({
       {
         this.setData({
          data : res.data ,
-         index1 :app.globalData.index,
+         index1 :app.globalData.index
         })
       })
       console.log(this.data.index1)
