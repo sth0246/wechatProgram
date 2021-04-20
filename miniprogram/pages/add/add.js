@@ -1,12 +1,15 @@
 // pages/add/add.js
 const db = wx.cloud.database();
+var up = false;
+var tempFilePaths = null;
+var url = "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/head.png";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    src : "cloud://mail-list-9gl8aqie19d28ecc.6d61-mail-list-9gl8aqie19d28ecc-1305628714/head.png"
   },
 
   /**
@@ -15,14 +18,46 @@ Page({
   onLoad: function (options) {
 
   },
+  upImage : function(){
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      success(res){
+        console.log(res);
+        tempFilePaths = res.tempFilePaths; 
+        up = true;
+        that.setData({
+          src : res.tempFilePaths
+        })
+      }
+    })
+  },
   addData : function(res){
+    console.log(tempFilePaths[0])
+    console.log(up)
+    if(up){
+      wx.cloud.uploadFile({
+        cloudPath : "photo/"+Date.now()+".jpg",
+        filePath : tempFilePaths[0],
+        success(res){
+          console.log(res)
+          url = res.fileID
+        },
+        fail(res){
+          console.log(res)
+        }
+      })
+      
+      console.log("上传成功了")
+    }
     console.log(res)
     var {name,addres,tel} = res.detail.value;
     db.collection("demo").add({
       data:{
         name : name,
         addres : addres,
-        tel : tel
+        tel : tel,
+        headImage : url
       }
     })
     .then(res=>{
@@ -37,6 +72,7 @@ Page({
       })
       setTimeout(function(){wx.hideToast();},4000)
     })
+    up = false;
   },
 
   /**

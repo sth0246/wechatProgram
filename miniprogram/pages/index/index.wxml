@@ -6,7 +6,7 @@
 <navigator id="{{index}}" bindtap="getDetails" url="/pages/details/details" wx:for="{{data}}"
   style="height:80rpx; font-size : 26px;color : #787878;">
   <view style=" height : 100%; width : 13%;">
-    <image src="{{head}}"></image>
+    <image src="{{item.headImage}}"></image>
   </view>
   <view>{{item.name}}</view>
 </navigator>

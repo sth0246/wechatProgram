@@ -1,8 +1,10 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/details/details",
-    "pages/add/add"
+    "pages/add/add",
+    "pages/demo1/demo1"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

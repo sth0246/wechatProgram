@@ -7,3 +7,18 @@ input{
   border-top : 2px solid #d1d1d1;
   border-bottom : 2px solid #d1d1d1;
 }
+.upImg{
+  display: inline-block;
+  margin:120rpx 250rpx 120rpx 250rpx;
+  height: 250rpx;
+  width: 250rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.mask{
+  position: relative;
+  top: 260rpx;
+  left: 300rpx;
+  font-size: 18px;
+  color: #242424;
+}
