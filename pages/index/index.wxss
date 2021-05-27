@@ -1,0 +1,95 @@
+
+/* pages/component/nav/nav.wxss */
+/* 轮播图 */
+	.tower-swiper .tower-item {
+		transform: scale(calc(0.5 + var(--index) / 10));
+		margin-left: calc(var(--left) * 100rpx - 150rpx);
+		z-index: var(--index);
+	}
+
+/* 卡片 */
+.add-sheet-view{
+  margin:10rpx auto;
+  background-color:#fff;
+  border:1rpx solid #ddd;
+  border-radius:30rpx;
+  padding:10rpx 26rpx 40rpx; 
+  width:95%;
+}
+.add-title{
+  font-size:38rpx;
+  padding:30rpx;
+}
+.add-sheet-content{
+  display:flex;
+  border-top:1rpx solid #eee;
+  border-right:1rpx solid #eee;
+}
+.add-mini-item{
+  border-left:1rpx solid #eee;
+  flex:1;
+  height:150rpx;
+  position: relative;
+  display:flex;
+  padding:15rpx 5rpx;
+}
+.card-view1{
+  font-size: 44rpx;
+  padding:30rpx 10rpx;
+  display: inline-block;
+}
+.card-view2{
+  flex:1;
+  text-align:left;
+  display: inline-block;
+}
+.card-view2-1{
+  font-size: 35rpx;
+  margin: 10rpx 0;
+  /* border: 1px solid gray; */
+}
+.card-view2-2{
+  font-size: 28rpx;
+  color: gray;
+  /* border: 1px solid green; */
+}
+.card-view-bottom{
+    border-bottom:1rpx solid #eee;
+}
+.clickedAddItem{
+  background-color:#ddd;
+}
+.search{ /* 搜索框*/
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.searchInput{
+  flex: 9;
+  height: 100%;
+  padding-left: 20rpx;
+
+  display: inline-block;
+}
+.box {
+  display: flex;
+  border: 1px solid #ffffff;
+  border-radius: 14px;
+  width: 90%;
+  height: 100%;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.box button{
+  flex: 1;
+  float: right;
+  display: block;
+  border-radius: 14px;
+  outline: none;
+  height: 100%;
+  font-size: 14px;
+}
+.box button::after{
+  border: none;
+}

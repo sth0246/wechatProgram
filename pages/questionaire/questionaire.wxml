@@ -1,0 +1,47 @@
+<view class = "topImage">
+    <image>
+    </image>
+</view>
+<view class="bigBox">
+    <view class = "leftBox">
+        <view class = "{{style0}}" bindtap = "tapLeft" id = "0">
+        性态度类
+        </view>
+        <view class="{{style1}}" style = "margin-top : 20%;" bindtap = "tapLeft" id = "1">
+        性心理类
+        </view>
+    </view>
+    <swiper class = "rightBox"  vertical = "true" bindchange = "change" current = "{{current}}">
+        <swiper-item>
+        <view class = "list">
+
+        </view>
+         <view class = "list">
+
+        </view>
+         <view class = "list">
+
+        </view>
+         <view class = "list">
+
+        </view>
+        </swiper-item>
+        <swiper-item>
+        <view class = "list">
+
+        </view>
+         <view class = "list">
+
+        </view>
+         <view class = "list">
+
+        </view>
+         <view class = "list">
+
+        </view>
+        </swiper-item>
+
+
+    </swiper>
+
+</view>

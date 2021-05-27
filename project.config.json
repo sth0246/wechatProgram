@@ -1,5 +1,4 @@
 {
-  "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
     "urlCheck": true,
@@ -38,8 +37,9 @@
     "minifyWXSS": true
   },
   "appid": "wxbc0d6705c4f02ba2",
-  "projectname": "miniprogram-3",
+  "projectname": "性好有你",
   "libVersion": "2.14.1",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "plugin": {
       "list": []
@@ -54,25 +54,75 @@
       "list": [
         {
           "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
+          "name": "知识库",
+          "pathName": "pages/knowledge/knowledge",
+          "query": "",
+          "scene": ""
         },
         {
-          "name": "pages/add/add",
+          "id": -1,
+          "name": "附录",
+          "pathName": "pages/about/about",
+          "query": "",
+          "scene": ""
+        },
+        {
+          "id": -1,
+          "name": "知识",
+          "pathName": "pages/acticle/acticle",
+          "query": "",
+          "scene": ""
+        },
+        {
+          "id": -1,
+          "name": "时间线",
+          "pathName": "pages/timeline/timeline",
+          "query": "",
+          "scene": ""
+        },
+        {
+          "id": -1,
+          "name": "问题手册",
+          "pathName": "pages/hand_book/hand_book",
+          "query": "",
+          "scene": ""
+        },
+        {
+          "id": -1,
+          "name": "one",
+          "pathName": "pages/one/one",
+          "query": "",
+          "scene": ""
+        },
+        {
+          "id": -1,
+          "name": "快速学习",
+          "pathName": "pages/learn/learn",
+          "query": "",
+          "scene": ""
+        },
+        {
+          "name": "banner",
+          "pathName": "pages/banner/banner",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "demo",
+          "pathName": "pages/demo/demo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "add",
           "pathName": "pages/add/add",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/details/details",
-          "pathName": "pages/details/details",
+          "name": "search",
+          "pathName": "pages/search/search",
           "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/demo1/demo1",
-          "pathName": "pages/demo1/demo1",
           "scene": null
         }
       ]

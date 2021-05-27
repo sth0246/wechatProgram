@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/timeline/timeline",
+    "pages/hand_book/hand_book",
+    "pages/learn/learn",
+    "pages/one/one",
+    "pages/knowledge/knowledge",
+    "pages/acticle/acticle",
+    "pages/acticle2/acticle2",
+    "pages/about/about",
+    "pages/demo/demo",
+    "pages/banner/banner",
+    "pages/add/add",
+    "pages/sec/sec",
+    "pages/search/search",
+    "pages/questionaire/questionaire",
+    "pages/acticles/acticles",
+    "pages/acticle2s/acticle2s"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#504315",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "概述",
+        "pagePath": "pages/index/index",
+        "iconPath": "./img/11.png",
+        "selectedIconPath": "./img/10.png"
+      },
+      {
+        "text": "知识库",
+        "pagePath": "pages/knowledge/knowledge",
+        "iconPath": "./img/21.png",
+        "selectedIconPath": "./img/20.png"
+      },
+      {
+        "text": "附录",
+        "pagePath": "pages/about/about",
+        "iconPath": "./img/31.png",
+        "selectedIconPath": "./img/30.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

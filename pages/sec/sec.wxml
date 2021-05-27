@@ -1,0 +1,2 @@
+<!--pages/sec/sec.wxml-->
+<input type="text" placeholder="输入密码" bindinput="check"></input>

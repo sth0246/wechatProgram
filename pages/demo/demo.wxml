@@ -1,0 +1,4 @@
+<!--pages/demo/demo.wxml-->
+<text>pages/demo/demo.wxml</text>
+
+<view style="height : 200rpx; width : 200rpx; background : green;" bindtap="tap"></view>

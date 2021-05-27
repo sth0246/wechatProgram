@@ -1,0 +1,23 @@
+/* miniprogram/pages/tabBar3/handbook/handbook.wxss */
+
+.content-body{
+  box-shadow: 10px 10px 5px #c0c0c0;
+  margin: 50rpx 30rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background-color:white;
+
+}
+.title{
+  padding: 30rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.wux-accordion__content{
+  color:#999;
+}
+.wux-cell-group{
+  box-shadow: 10px 10px 5px #c0c0c0;
+  padding: 10rpx 25rpx 50rpx;
+}
