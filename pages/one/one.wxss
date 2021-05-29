@@ -1,0 +1,35 @@
+.page{
+    width:88%;
+    margin:30px auto;
+    background-color:white;
+    border-radius:10px;
+    background-color:#FFCC33;
+    box-shadow:5px 6px 8px rgba(0, 0, 0, 0.3);
+   /* border:1px black solid; */
+}
+
+
+.title{
+    text-align:center;
+    font-weight:600;
+    margin:40rpx;
+    padding:40rpx 20rpx;
+    font-size:44rpx;
+    border-bottom:1px solid black;
+
+}
+
+.content{
+    /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); */
+    text-indent:2em;
+    line-height:60rpx;
+    padding:0rpx 36rpx 40rpx;
+    font-size:36rpx;
+}
+
+.getpage{
+    position:absolute;
+    bottom:80rpx;
+    /* border:1px black solid; */
+    width:100%;
+}

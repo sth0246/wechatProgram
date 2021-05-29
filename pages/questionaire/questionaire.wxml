@@ -1,0 +1,63 @@
+<image src="/img/swiper/questionnaire.jpg" />
+
+<view class="topImage">
+  <image>
+  </image>
+</view>
+<view class="bigBox">
+  <view class="leftBox">
+    <view
+      class="{{style0}}"
+      bindtap="tapLeft"
+      id="0"
+    >
+      性态度类
+    </view>
+    <view
+      class="{{style1}}"
+      style="margin-top : 20%;"
+      bindtap="tapLeft"
+      id="1"
+    >
+      性心理类
+    </view>
+  </view>
+  <swiper
+    class="rightBox"
+    vertical="true"
+    bindchange="change"
+    current="{{current}}"
+  >
+    <swiper-item>
+      <view class="list" bindtap="questionaire1">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷1</view>
+      </view>
+      <view class="list" bindtap="questionaire1">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷2</view>
+      </view>
+      <view class="list" bindtap="questionaire1">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷3</view>
+      </view>
+      <view class="list" bindtap="questionaire1">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷4</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="list" bindtap="questionaire2">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷5</view>
+      </view>
+      <view class="list" bindtap="questionaire2">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷6</view>
+      </view>
+      <view class="list" bindtap="questionaire2">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷7</view>
+      </view>
+      <view class="list" bindtap="questionaire2">
+        <view class="ipt" style="padding: 40px;text-align:center">调查问卷8</view>
+      </view>
+    </swiper-item>
+
+  </swiper>
+
+</view>
+

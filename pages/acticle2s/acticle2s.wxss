@@ -1,0 +1,32 @@
+.title{
+  font-size:60rpx;
+}
+.reference{
+  margin-top:28rpx;
+  font-style:italic;
+  color:#888;
+}
+.updateTime{
+  font-style:italic;
+  color:#555;
+  margin-bottom:40rpx;
+}
+.page-section{
+  background:white;
+  padding:20rpx;
+  margin:16rpx 14rpx 140rpx;
+  border-radius:26rpx;
+}
+.view{
+  color:#777;
+  padding:20rpx 0;
+}
+.bottom{
+  border-top:1rpx solid #efefef;
+  background:white;
+  padding:10rpx 0 16rpx;
+  /*border:2px solid black;*/
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
