@@ -1,0 +1,7 @@
+/* pages/questionaire2/questionaire2.wxss */
+
+.ipt {
+    color: black;
+    font-size: 17px;
+    font-weight: 200;
+}

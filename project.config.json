@@ -37,7 +37,7 @@
     "minifyWXSS": true
   },
   "appid": "wxbc0d6705c4f02ba2",
-  "projectname": "性好有你",
+  "projectname": "%E6%80%A7%E5%A5%BD%E6%9C%89%E4%BD%A0",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
