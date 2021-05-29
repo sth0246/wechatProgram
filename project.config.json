@@ -124,6 +124,12 @@
           "pathName": "pages/search/search",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "questionaire",
+          "pathName": "pages/questionaire/questionaire",
+          "query": "",
+          "scene": null
         }
       ]
     }

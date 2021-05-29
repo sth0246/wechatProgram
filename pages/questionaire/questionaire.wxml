@@ -1,5 +1,6 @@
 <view class = "topImage">
-    <image>
+    <image src="/img/questionaire.jpg">
+
     </image>
 </view>
 <view class="bigBox">
@@ -14,31 +15,31 @@
     <swiper class = "rightBox"  vertical = "true" bindchange = "change" current = "{{current}}">
         <swiper-item>
         <view class = "list">
-
+            测一测你的性态度
         </view>
          <view class = "list">
-
+            测一测你的性别角色
         </view>
          <view class = "list">
-
+            你知道你的性取向吗
         </view>
          <view class = "list">
-
-        </view>
+            你是否容易被感情PUA
+        </view> 
         </swiper-item>
         <swiper-item>
         <view class = "list">
+            
+        </view>
+         <view class = "list">
+            
+        </view>
+        <!-- <view class = "list">
 
         </view>
          <view class = "list">
 
-        </view>
-         <view class = "list">
-
-        </view>
-         <view class = "list">
-
-        </view>
+        </view> -->
         </swiper-item>
 
 
